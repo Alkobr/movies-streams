@@ -1,0 +1,137 @@
+.sidebar {
+    padding: 2rem;
+    border-right: 2px solid #1e1e1e;
+
+}
+.sidebarDesign{
+    padding-top:0.75rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.imgStyle {
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.imgStyleFriend {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+
+.sidebar ul {
+    margin-top: 3rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar ul li .icon.active {
+    color: #ffa41c;
+}
+
+.friendList {
+    background-color: #151515;
+    position: relative;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+    border: 1px solid #a6a6a636;
+    padding: 1rem;
+    border-radius: 2rem;
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.iconPlus {
+    position: absolute;
+    bottom: -1rem;
+    right: 50%;
+    transform: translateX(50%);
+    height: 33px;
+    width: 33px;
+    font-size: 1.5rem;
+    color: #ffa41c;
+    cursor: pointer;
+}
+
+.SideBarBottom {
+    margin-top: 5rem;
+    display: flex;
+   gap: 3rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #ffa41c;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+.logoutIcon {
+    font-size: 1.5rem;
+    height: 25px;
+    width: 30px;
+    color: red;
+    cursor: pointer;
+    align-self: flex-end;
+}

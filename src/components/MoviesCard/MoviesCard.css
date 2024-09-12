@@ -1,0 +1,44 @@
+.moviesCardDesign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgClass {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 25px;
+}
+
+.container {
+
+    width: 15rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: none;
+    margin: 1rem 2rem;
+    background-color: #00000080;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-1 h4 {
+    font-size: medium;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.playIcon {
+    color: #FFA41C;
+    height: 20px;
+    width: 20px;
+}
